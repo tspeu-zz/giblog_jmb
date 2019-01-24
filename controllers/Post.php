@@ -8,6 +8,12 @@ class post extends CI_Controller {
                         //para la primer lettra Mayuscula
         $title = 'latest Posts !';
         $data['title'] = ucfirst($title);
+
+        $data['posts'] = $this->post_model->get_posts();
+        print_r($data['posts']);
+
+
+
 //se carga de /view->carpet
         $this->load->view('templates/header');
 //carga de la carpeta pages . cualqueira qwue empieze por page y 
