@@ -10,6 +10,9 @@
     
             <small class="badge badge-info""><?php echo  $post['create_at']; ?> </small>
             <p> <?php echo  $post['body']; ?> </p>
+            <button type="button" class="btn btn-success">
+                <a class="text-white" href="<?php echo site_url('/posts/'.$post['slug']); ?>">Read more...
+            </a></button>
         </div>
     </div>
     <?php endforeach ?>
